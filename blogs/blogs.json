@@ -1,0 +1,14 @@
+{
+  "repo": "craftcoffee",
+  "feeds": [
+    {
+      "source": "https://craftcoffee.com",
+      "feed_url": "https://craftcoffee.com",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-20T13:31:34Z"
+}

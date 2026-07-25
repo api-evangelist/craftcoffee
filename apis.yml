@@ -1,7 +1,26 @@
 aid: craftcoffee
 name: CraftCoffee
-description: CraftCoffee is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Craft Coffee is a direct-to-consumer specialty coffee company operating since 2011 that sources,
+  roasts, and ships freshly roasted coffee to subscribers across the United States. Its storefront
+  offers flexible, commitment-free coffee subscriptions plus one-off bags, gift subscriptions, and a
+  preference-matching engine that recommends blends and single-origin coffees (Into the Black,
+  Streetlight, Sumatra, Throwback, and more) based on customer taste. The business runs on a Shopify
+  commerce stack with Shopify Customer Accounts for authenticated login; it is a consumer e-commerce
+  brand and does not currently publish a public developer API, SDKs, or API documentation. Added to
+  the API Evangelist network as a 500 Global portfolio company for ongoing discovery and enrichment.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.craftcoffee.com/cdn/shop/files/Craft_Coffee_logo_c513151c-b0a6-4616-bca4-7bb90d7fbb45.png?height=52&v=1736786717
 url: https://raw.githubusercontent.com/api-evangelist/craftcoffee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Coffee
+- Coffee Subscription
+- Direct-to-Consumer
+- E-Commerce
+- Food and Beverage
+- Subscription Commerce
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,26 @@ maintainers:
 common:
 - type: Website
   url: https://craftcoffee.com
+- type: Blog
+  url: https://craftcoffee.com/blogs/news
+- type: Support
+  url: https://craftcoffee.com/pages/contact
+- type: SignUp
+  url: https://craftcoffee.com/account/register
+- type: Login
+  url: https://craftcoffee.com/account/login
+- type: Pricing
+  url: https://craftcoffee.com/collections/all
+- type: TermsOfService
+  url: https://craftcoffee.com/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://craftcoffee.com/policies/privacy-policy
+- type: WellKnown
+  url: well-known/craftcoffee-well-known.yml
+- type: DomainSecurity
+  url: security/craftcoffee-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
