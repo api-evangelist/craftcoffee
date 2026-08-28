@@ -9,6 +9,17 @@ description: >-
   commerce stack with Shopify Customer Accounts for authenticated login; it is a consumer e-commerce
   brand and does not currently publish a public developer API, SDKs, or API documentation. Added to
   the API Evangelist network as a 500 Global portfolio company for ongoing discovery and enrichment.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
