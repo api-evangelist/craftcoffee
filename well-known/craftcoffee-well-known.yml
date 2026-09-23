@@ -2,20 +2,27 @@ generated: '2026-07-18'
 method: searched
 source: live probe of https://craftcoffee.com/.well-known/*
 host: https://craftcoffee.com
-documents:
-- path: /.well-known/openid-configuration
-  status: 200
-  file: craftcoffee-openid-configuration.json
-  note: Shopify Customer Accounts OIDC discovery document served by the storefront domain (issuer https://shopify.com/authentication/70122242289).
-- path: /.well-known/oauth-authorization-server
-  status: 200
-  file: craftcoffee-oauth-authorization-server.json
-  note: RFC 8414 OAuth authorization-server metadata (Shopify Customer Accounts).
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/api-catalog
-  status: 301
-  note: redirects to storefront homepage; no RFC 9727 catalog published.
-- path: /.well-known/ai-plugin.json
-  status: 301
-  note: redirects to storefront homepage; no plugin manifest published.
+hosts:
+- host: https://craftcoffee.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: craftcoffee-openid-configuration.json
+    note: Shopify Customer Accounts OIDC discovery document served by the storefront domain (issuer https://shopify.com/authentication/70122242289).
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: craftcoffee-oauth-authorization-server.json
+    note: RFC 8414 OAuth authorization-server metadata (Shopify Customer Accounts).
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 301
+    note: redirects to storefront homepage; no RFC 9727 catalog published.
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    note: redirects to storefront homepage; no plugin manifest published.
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
