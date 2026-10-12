@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/craftcoffee/integrations
+- https://n8n.io/integrations/craftcoffee/
+- https://composio.dev/toolkits/craftcoffee
+- https://monid.ai/tools/craftcoffee
+checked:
+- https://composio.dev/toolkits/craftcoffee
+- https://monid.ai/tools/craftcoffee
+- https://n8n.io/integrations/craftcoffee/
+- https://zapier.com/apps/craftcoffee/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
